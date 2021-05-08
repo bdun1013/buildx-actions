@@ -29,4 +29,4 @@ jobs:
       - 
         name: Build Docker Image
         run: |
-          docker build --platform linux/arm64,linux/amd64 .
+          docker build --platform linux/arm64,linux/amd64 . -t boxboatbrian/buildx-test:latest --push
